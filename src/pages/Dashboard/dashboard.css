@@ -1,0 +1,23 @@
+.navLink, .navLink-active {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 56px;
+    align-items: center;
+    text-decoration: none;
+    color: #83818E;
+    padding: 4px 32px;
+    gap: 24px;
+    transition: color 0.4s;
+}
+
+.navLink-active {
+    color: #9771FF;
+    border-right: 3px solid #9771FF;
+    background: linear-gradient(270deg, rgba(151, 113, 255, 0.36) 0%, rgba(239, 236, 249, 0.36) 77.92%)
+}
+
+.navLink:hover, .navLink-active:hover {
+    color: #5B3FC5;
+    
+}
