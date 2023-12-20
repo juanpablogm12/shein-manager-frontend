@@ -1,10 +1,10 @@
-import { Avatar, Box, Divider, Icon, Stack, Typography } from "@mui/material";
+import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
+import LocalOfferIcon from "@mui/icons-material/LocalOffer";
+import LogoutIcon from "@mui/icons-material/Logout";
+import SettingsIcon from "@mui/icons-material/Settings";
+import { Avatar, Box, Divider, Stack, Typography } from "@mui/material";
 import React from "react";
 import { NavLink } from "react-router-dom";
-import LocalOfferIcon from "@mui/icons-material/LocalOffer";
-import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
-import SettingsIcon from "@mui/icons-material/Settings";
-import LogoutIcon from "@mui/icons-material/Logout";
 import "../dashboard.css";
 
 export default function SideBar() {
@@ -27,7 +27,15 @@ export default function SideBar() {
   ];
 
   return (
-    <Box sx={{ display: "flex", flexDirection: "column", width: "16%", height: "100%", backgroundColor: "neutral.A1" }}>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        width: "16%",
+        height: "100%",
+        backgroundColor: "neutral.A1",
+      }}
+    >
       <Box
         sx={{
           display: "flex",
@@ -46,6 +54,7 @@ export default function SideBar() {
             alignItems: "center",
             gap: "16px",
             height: "72px",
+            color: "main.C"
           }}
         >
           <Avatar sx={{ bgcolor: "main.B", height: "32px", width: "32px" }} />
@@ -56,6 +65,7 @@ export default function SideBar() {
         {navLinks.map((navLink) => {
           return (
             <NavLink
+              key={navLink.name}
               className={({ isActive }) => [
                 isActive ? "navLink-active" : "navLink",
               ]}

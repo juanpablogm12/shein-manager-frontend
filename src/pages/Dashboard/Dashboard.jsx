@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function Dashboard() {
   
   return (
-    <Box sx={{display: "flex", width: "100vw", height: "100vh", bgcolor: "#83818E"}}>
+    <Box sx={{display: "flex", width: "100vw", height: "100vh", bgcolor: "main.D"}}>
       <SideBar/>
       <Outlet />
     </Box>

@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Dashboard, LandingPage, Login, Register } from "../pages";
+import Products from "../pages/Dashboard/DashboardComponents/Products";
 
 export const router = createBrowserRouter([
   {
@@ -20,7 +21,7 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "products",
-        element: <h1>products</h1>,
+        element: <Products/>,
       },
       {
         path: "orders",
